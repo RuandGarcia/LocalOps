@@ -1,0 +1,356 @@
+{
+  "risco_critico": {
+    "limiar_usado": 0.303,
+    "n_teste": 70254,
+    "taxa_base": 0.108,
+    "matriz_confusao": {
+      "verdadeiro_positivo": 6275,
+      "falso_positivo": 1002,
+      "falso_negativo": 1346,
+      "verdadeiro_negativo": 61631
+    },
+    "tabela_por_limiar": [
+      {
+        "limiar": 0.1,
+        "verdadeiro_positivo": 7191,
+        "falso_positivo": 3450,
+        "falso_negativo": 430,
+        "verdadeiro_negativo": 59183,
+        "precisao": 0.676,
+        "recall": 0.944,
+        "f1": 0.788
+      },
+      {
+        "limiar": 0.2,
+        "verdadeiro_positivo": 6435,
+        "falso_positivo": 1633,
+        "falso_negativo": 1186,
+        "verdadeiro_negativo": 61000,
+        "precisao": 0.798,
+        "recall": 0.844,
+        "f1": 0.82
+      },
+      {
+        "limiar": 0.3,
+        "verdadeiro_positivo": 6281,
+        "falso_positivo": 1023,
+        "falso_negativo": 1340,
+        "verdadeiro_negativo": 61610,
+        "precisao": 0.86,
+        "recall": 0.824,
+        "f1": 0.842
+      },
+      {
+        "limiar": 0.4,
+        "verdadeiro_positivo": 5841,
+        "falso_positivo": 725,
+        "falso_negativo": 1780,
+        "verdadeiro_negativo": 61908,
+        "precisao": 0.89,
+        "recall": 0.766,
+        "f1": 0.823
+      },
+      {
+        "limiar": 0.5,
+        "verdadeiro_positivo": 5621,
+        "falso_positivo": 560,
+        "falso_negativo": 2000,
+        "verdadeiro_negativo": 62073,
+        "precisao": 0.909,
+        "recall": 0.738,
+        "f1": 0.815
+      },
+      {
+        "limiar": 0.6,
+        "verdadeiro_positivo": 5360,
+        "falso_positivo": 457,
+        "falso_negativo": 2261,
+        "verdadeiro_negativo": 62176,
+        "precisao": 0.921,
+        "recall": 0.703,
+        "f1": 0.798
+      },
+      {
+        "limiar": 0.7,
+        "verdadeiro_positivo": 5181,
+        "falso_positivo": 428,
+        "falso_negativo": 2440,
+        "verdadeiro_negativo": 62205,
+        "precisao": 0.924,
+        "recall": 0.68,
+        "f1": 0.783
+      },
+      {
+        "limiar": 0.8,
+        "verdadeiro_positivo": 4753,
+        "falso_positivo": 201,
+        "falso_negativo": 2868,
+        "verdadeiro_negativo": 62432,
+        "precisao": 0.959,
+        "recall": 0.624,
+        "f1": 0.756
+      },
+      {
+        "limiar": 0.9,
+        "verdadeiro_positivo": 3637,
+        "falso_positivo": 139,
+        "falso_negativo": 3984,
+        "verdadeiro_negativo": 62494,
+        "precisao": 0.963,
+        "recall": 0.477,
+        "f1": 0.638
+      }
+    ],
+    "piores_categorias": [
+      {
+        "categoria": "cat95",
+        "n": 60,
+        "taxa_erro": 0.3,
+        "falsos_negativos": 2,
+        "falsos_positivos": 16
+      },
+      {
+        "categoria": "cat76",
+        "n": 953,
+        "taxa_erro": 0.264,
+        "falsos_negativos": 242,
+        "falsos_positivos": 10
+      },
+      {
+        "categoria": "cat74",
+        "n": 85,
+        "taxa_erro": 0.235,
+        "falsos_negativos": 16,
+        "falsos_positivos": 4
+      },
+      {
+        "categoria": "cat94",
+        "n": 101,
+        "taxa_erro": 0.228,
+        "falsos_negativos": 3,
+        "falsos_positivos": 20
+      },
+      {
+        "categoria": "cat63",
+        "n": 85,
+        "taxa_erro": 0.176,
+        "falsos_negativos": 7,
+        "falsos_positivos": 8
+      }
+    ],
+    "piores_equipes": [
+      {
+        "grupo_designado": "Team16",
+        "n": 55,
+        "taxa_erro": 0.255,
+        "falsos_negativos": 4,
+        "falsos_positivos": 10
+      },
+      {
+        "grupo_designado": "Team05",
+        "n": 2469,
+        "taxa_erro": 0.2,
+        "falsos_negativos": 423,
+        "falsos_positivos": 70
+      },
+      {
+        "grupo_designado": "Team12",
+        "n": 935,
+        "taxa_erro": 0.196,
+        "falsos_negativos": 81,
+        "falsos_positivos": 102
+      },
+      {
+        "grupo_designado": "Team04",
+        "n": 65,
+        "taxa_erro": 0.185,
+        "falsos_negativos": 1,
+        "falsos_positivos": 11
+      },
+      {
+        "grupo_designado": "Team17",
+        "n": 188,
+        "taxa_erro": 0.144,
+        "falsos_negativos": 8,
+        "falsos_positivos": 19
+      }
+    ]
+  },
+  "risco_violacao_ola": {
+    "limiar_usado": 0.753,
+    "n_teste": 4993,
+    "taxa_base": 0.01,
+    "matriz_confusao": {
+      "verdadeiro_positivo": 11,
+      "falso_positivo": 19,
+      "falso_negativo": 39,
+      "verdadeiro_negativo": 4924
+    },
+    "tabela_por_limiar": [
+      {
+        "limiar": 0.1,
+        "verdadeiro_positivo": 50,
+        "falso_positivo": 4449,
+        "falso_negativo": 0,
+        "verdadeiro_negativo": 494,
+        "precisao": 0.011,
+        "recall": 1.0,
+        "f1": 0.022
+      },
+      {
+        "limiar": 0.2,
+        "verdadeiro_positivo": 49,
+        "falso_positivo": 3078,
+        "falso_negativo": 1,
+        "verdadeiro_negativo": 1865,
+        "precisao": 0.016,
+        "recall": 0.98,
+        "f1": 0.031
+      },
+      {
+        "limiar": 0.3,
+        "verdadeiro_positivo": 49,
+        "falso_positivo": 2460,
+        "falso_negativo": 1,
+        "verdadeiro_negativo": 2483,
+        "precisao": 0.02,
+        "recall": 0.98,
+        "f1": 0.038
+      },
+      {
+        "limiar": 0.4,
+        "verdadeiro_positivo": 42,
+        "falso_positivo": 1661,
+        "falso_negativo": 8,
+        "verdadeiro_negativo": 3282,
+        "precisao": 0.025,
+        "recall": 0.84,
+        "f1": 0.048
+      },
+      {
+        "limiar": 0.5,
+        "verdadeiro_positivo": 37,
+        "falso_positivo": 1271,
+        "falso_negativo": 13,
+        "verdadeiro_negativo": 3672,
+        "precisao": 0.028,
+        "recall": 0.74,
+        "f1": 0.054
+      },
+      {
+        "limiar": 0.6,
+        "verdadeiro_positivo": 25,
+        "falso_positivo": 565,
+        "falso_negativo": 25,
+        "verdadeiro_negativo": 4378,
+        "precisao": 0.042,
+        "recall": 0.5,
+        "f1": 0.078
+      },
+      {
+        "limiar": 0.7,
+        "verdadeiro_positivo": 15,
+        "falso_positivo": 125,
+        "falso_negativo": 35,
+        "verdadeiro_negativo": 4818,
+        "precisao": 0.107,
+        "recall": 0.3,
+        "f1": 0.158
+      },
+      {
+        "limiar": 0.8,
+        "verdadeiro_positivo": 3,
+        "falso_positivo": 1,
+        "falso_negativo": 47,
+        "verdadeiro_negativo": 4942,
+        "precisao": 0.75,
+        "recall": 0.06,
+        "f1": 0.111
+      },
+      {
+        "limiar": 0.9,
+        "verdadeiro_positivo": 0,
+        "falso_positivo": 0,
+        "falso_negativo": 50,
+        "verdadeiro_negativo": 4943,
+        "precisao": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    ],
+    "piores_categorias": [
+      {
+        "categoria": "cat112",
+        "n": 57,
+        "taxa_erro": 0.053,
+        "falsos_negativos": 2,
+        "falsos_positivos": 1
+      },
+      {
+        "categoria": "cat102",
+        "n": 79,
+        "taxa_erro": 0.051,
+        "falsos_negativos": 3,
+        "falsos_positivos": 1
+      },
+      {
+        "categoria": "cat35",
+        "n": 65,
+        "taxa_erro": 0.031,
+        "falsos_negativos": 1,
+        "falsos_positivos": 1
+      },
+      {
+        "categoria": "cat19",
+        "n": 37,
+        "taxa_erro": 0.027,
+        "falsos_negativos": 0,
+        "falsos_positivos": 1
+      },
+      {
+        "categoria": "cat24",
+        "n": 41,
+        "taxa_erro": 0.024,
+        "falsos_negativos": 1,
+        "falsos_positivos": 0
+      }
+    ],
+    "piores_equipes": [
+      {
+        "grupo_designado": "Team07",
+        "n": 51,
+        "taxa_erro": 0.098,
+        "falsos_negativos": 5,
+        "falsos_positivos": 0
+      },
+      {
+        "grupo_designado": "Team09",
+        "n": 399,
+        "taxa_erro": 0.05,
+        "falsos_negativos": 10,
+        "falsos_positivos": 10
+      },
+      {
+        "grupo_designado": "Team02",
+        "n": 40,
+        "taxa_erro": 0.05,
+        "falsos_negativos": 2,
+        "falsos_positivos": 0
+      },
+      {
+        "grupo_designado": "Team03",
+        "n": 86,
+        "taxa_erro": 0.047,
+        "falsos_negativos": 2,
+        "falsos_positivos": 2
+      },
+      {
+        "grupo_designado": "Team12",
+        "n": 77,
+        "taxa_erro": 0.026,
+        "falsos_negativos": 2,
+        "falsos_positivos": 0
+      }
+    ]
+  }
+}

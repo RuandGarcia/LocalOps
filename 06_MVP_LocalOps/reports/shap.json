@@ -1,0 +1,864 @@
+{
+  "forecast": {
+    "total_h1": {
+      "ds_previsto": "2026-01-01",
+      "base": 114.1,
+      "previsto": 762.5,
+      "outras_features": 0.0,
+      "contribuicoes": [
+        {
+          "rotulo": "valor de ontem",
+          "valor": 755.0,
+          "shap": 357.8
+        },
+        {
+          "rotulo": "média móvel 7 dias",
+          "valor": 858.86,
+          "shap": 227.8
+        },
+        {
+          "rotulo": "média móvel 30 dias",
+          "valor": 877.43,
+          "shap": 46.5
+        },
+        {
+          "rotulo": "feriado nacional?",
+          "valor": 1.0,
+          "shap": -30.7
+        },
+        {
+          "rotulo": "valor há 7 dias",
+          "valor": 704.0,
+          "shap": 17.7
+        },
+        {
+          "rotulo": "valor há 14 dias",
+          "valor": 1005.0,
+          "shap": 11.0
+        },
+        {
+          "rotulo": "dia do mês",
+          "valor": 1.0,
+          "shap": 8.6
+        },
+        {
+          "rotulo": "fim de semana?",
+          "valor": 0.0,
+          "shap": 4.0
+        },
+        {
+          "rotulo": "dia da semana",
+          "valor": 3.0,
+          "shap": 3.0
+        },
+        {
+          "rotulo": "mês",
+          "valor": 1.0,
+          "shap": 2.7
+        }
+      ]
+    },
+    "total_h7": {
+      "ds_previsto": "2026-01-07",
+      "base": 114.6,
+      "previsto": 838.5,
+      "outras_features": 0.0,
+      "contribuicoes": [
+        {
+          "rotulo": "média móvel 30 dias",
+          "valor": 877.43,
+          "shap": 573.6
+        },
+        {
+          "rotulo": "valor de ontem",
+          "valor": 755.0,
+          "shap": 78.7
+        },
+        {
+          "rotulo": "valor há 7 dias",
+          "valor": 704.0,
+          "shap": 65.4
+        },
+        {
+          "rotulo": "mês",
+          "valor": 1.0,
+          "shap": -51.0
+        },
+        {
+          "rotulo": "dia do mês",
+          "valor": 1.0,
+          "shap": 43.0
+        },
+        {
+          "rotulo": "dia da semana",
+          "valor": 3.0,
+          "shap": 7.8
+        },
+        {
+          "rotulo": "média móvel 7 dias",
+          "valor": 858.86,
+          "shap": 3.2
+        },
+        {
+          "rotulo": "feriado nacional?",
+          "valor": 1.0,
+          "shap": 2.2
+        },
+        {
+          "rotulo": "fim de semana?",
+          "valor": 0.0,
+          "shap": 1.1
+        },
+        {
+          "rotulo": "valor há 14 dias",
+          "valor": 1005.0,
+          "shap": -0.1
+        }
+      ]
+    },
+    "P2_h1": {
+      "ds_previsto": "2026-01-01",
+      "base": 14.4,
+      "previsto": 90.9,
+      "outras_features": 0.0,
+      "contribuicoes": [
+        {
+          "rotulo": "média móvel 30 dias",
+          "valor": 60.2,
+          "shap": 36.2
+        },
+        {
+          "rotulo": "valor há 14 dias",
+          "valor": 101.0,
+          "shap": 22.0
+        },
+        {
+          "rotulo": "valor há 7 dias",
+          "valor": 20.0,
+          "shap": 14.8
+        },
+        {
+          "rotulo": "dia da semana",
+          "valor": 3.0,
+          "shap": 5.2
+        },
+        {
+          "rotulo": "média móvel 7 dias",
+          "valor": 36.29,
+          "shap": -2.3
+        },
+        {
+          "rotulo": "dia do mês",
+          "valor": 1.0,
+          "shap": 1.7
+        },
+        {
+          "rotulo": "mês",
+          "valor": 1.0,
+          "shap": -1.2
+        },
+        {
+          "rotulo": "valor de ontem",
+          "valor": 15.0,
+          "shap": -0.7
+        },
+        {
+          "rotulo": "feriado nacional?",
+          "valor": 1.0,
+          "shap": 0.7
+        },
+        {
+          "rotulo": "fim de semana?",
+          "valor": 0.0,
+          "shap": 0.2
+        }
+      ]
+    },
+    "P2_h7": {
+      "ds_previsto": "2026-01-07",
+      "base": 14.4,
+      "previsto": 56.1,
+      "outras_features": 0.0,
+      "contribuicoes": [
+        {
+          "rotulo": "média móvel 7 dias",
+          "valor": 36.29,
+          "shap": 23.9
+        },
+        {
+          "rotulo": "média móvel 30 dias",
+          "valor": 60.2,
+          "shap": 18.6
+        },
+        {
+          "rotulo": "valor de ontem",
+          "valor": 15.0,
+          "shap": -7.5
+        },
+        {
+          "rotulo": "valor há 7 dias",
+          "valor": 20.0,
+          "shap": -5.5
+        },
+        {
+          "rotulo": "dia do mês",
+          "valor": 1.0,
+          "shap": 5.0
+        },
+        {
+          "rotulo": "valor há 14 dias",
+          "valor": 101.0,
+          "shap": 3.9
+        },
+        {
+          "rotulo": "dia da semana",
+          "valor": 3.0,
+          "shap": 2.6
+        },
+        {
+          "rotulo": "feriado nacional?",
+          "valor": 1.0,
+          "shap": 2.2
+        },
+        {
+          "rotulo": "mês",
+          "valor": 1.0,
+          "shap": -1.6
+        },
+        {
+          "rotulo": "fim de semana?",
+          "valor": 0.0,
+          "shap": -0.0
+        }
+      ]
+    },
+    "P3_h1": {
+      "ds_previsto": "2026-01-01",
+      "base": 38.9,
+      "previsto": 346.9,
+      "outras_features": 0.0,
+      "contribuicoes": [
+        {
+          "rotulo": "média móvel 30 dias",
+          "valor": 312.03,
+          "shap": 120.9
+        },
+        {
+          "rotulo": "valor de ontem",
+          "valor": 372.0,
+          "shap": 80.6
+        },
+        {
+          "rotulo": "média móvel 7 dias",
+          "valor": 435.29,
+          "shap": 75.8
+        },
+        {
+          "rotulo": "valor há 7 dias",
+          "valor": 379.0,
+          "shap": 52.1
+        },
+        {
+          "rotulo": "dia do mês",
+          "valor": 1.0,
+          "shap": -15.4
+        },
+        {
+          "rotulo": "feriado nacional?",
+          "valor": 1.0,
+          "shap": -12.8
+        },
+        {
+          "rotulo": "valor há 14 dias",
+          "valor": 300.0,
+          "shap": 12.7
+        },
+        {
+          "rotulo": "mês",
+          "valor": 1.0,
+          "shap": -4.8
+        },
+        {
+          "rotulo": "dia da semana",
+          "valor": 3.0,
+          "shap": -1.8
+        },
+        {
+          "rotulo": "fim de semana?",
+          "valor": 0.0,
+          "shap": 0.7
+        }
+      ]
+    },
+    "P3_h7": {
+      "ds_previsto": "2026-01-07",
+      "base": 39.3,
+      "previsto": 165.2,
+      "outras_features": 0.0,
+      "contribuicoes": [
+        {
+          "rotulo": "valor de ontem",
+          "valor": 372.0,
+          "shap": 74.2
+        },
+        {
+          "rotulo": "média móvel 30 dias",
+          "valor": 312.03,
+          "shap": 68.8
+        },
+        {
+          "rotulo": "dia do mês",
+          "valor": 1.0,
+          "shap": -26.0
+        },
+        {
+          "rotulo": "mês",
+          "valor": 1.0,
+          "shap": -20.2
+        },
+        {
+          "rotulo": "média móvel 7 dias",
+          "valor": 435.29,
+          "shap": 19.7
+        },
+        {
+          "rotulo": "valor há 7 dias",
+          "valor": 379.0,
+          "shap": 14.9
+        },
+        {
+          "rotulo": "valor há 14 dias",
+          "valor": 300.0,
+          "shap": -6.2
+        },
+        {
+          "rotulo": "dia da semana",
+          "valor": 3.0,
+          "shap": 2.3
+        },
+        {
+          "rotulo": "feriado nacional?",
+          "valor": 1.0,
+          "shap": -1.6
+        },
+        {
+          "rotulo": "fim de semana?",
+          "valor": 0.0,
+          "shap": -0.0
+        }
+      ]
+    }
+  },
+  "importancia_global_forecast": {
+    "total": [
+      {
+        "feature": "lag_1",
+        "importancia_media_abs": 70.96
+      },
+      {
+        "feature": "media_movel_7",
+        "importancia_media_abs": 52.5
+      },
+      {
+        "feature": "lag_7",
+        "importancia_media_abs": 24.54
+      },
+      {
+        "feature": "mes",
+        "importancia_media_abs": 14.13
+      },
+      {
+        "feature": "media_movel_30",
+        "importancia_media_abs": 11.52
+      },
+      {
+        "feature": "dia_semana",
+        "importancia_media_abs": 9.55
+      },
+      {
+        "feature": "lag_14",
+        "importancia_media_abs": 7.13
+      },
+      {
+        "feature": "dia_do_mes",
+        "importancia_media_abs": 2.19
+      },
+      {
+        "feature": "fim_de_semana",
+        "importancia_media_abs": 1.3
+      },
+      {
+        "feature": "feriado",
+        "importancia_media_abs": 0.26
+      }
+    ],
+    "p2": [
+      {
+        "feature": "lag_1",
+        "importancia_media_abs": 12.62
+      },
+      {
+        "feature": "media_movel_30",
+        "importancia_media_abs": 5.16
+      },
+      {
+        "feature": "media_movel_7",
+        "importancia_media_abs": 3.85
+      },
+      {
+        "feature": "lag_14",
+        "importancia_media_abs": 3.66
+      },
+      {
+        "feature": "dia_semana",
+        "importancia_media_abs": 2.29
+      },
+      {
+        "feature": "lag_7",
+        "importancia_media_abs": 1.84
+      },
+      {
+        "feature": "mes",
+        "importancia_media_abs": 1.74
+      },
+      {
+        "feature": "dia_do_mes",
+        "importancia_media_abs": 1.25
+      },
+      {
+        "feature": "fim_de_semana",
+        "importancia_media_abs": 0.19
+      },
+      {
+        "feature": "feriado",
+        "importancia_media_abs": 0.02
+      }
+    ],
+    "p3": [
+      {
+        "feature": "lag_7",
+        "importancia_media_abs": 16.74
+      },
+      {
+        "feature": "media_movel_30",
+        "importancia_media_abs": 12.27
+      },
+      {
+        "feature": "media_movel_7",
+        "importancia_media_abs": 10.4
+      },
+      {
+        "feature": "lag_1",
+        "importancia_media_abs": 7.95
+      },
+      {
+        "feature": "lag_14",
+        "importancia_media_abs": 6.05
+      },
+      {
+        "feature": "dia_semana",
+        "importancia_media_abs": 5.06
+      },
+      {
+        "feature": "mes",
+        "importancia_media_abs": 2.02
+      },
+      {
+        "feature": "dia_do_mes",
+        "importancia_media_abs": 1.79
+      },
+      {
+        "feature": "fim_de_semana",
+        "importancia_media_abs": 0.63
+      },
+      {
+        "feature": "feriado",
+        "importancia_media_abs": 0.35
+      }
+    ],
+    "kpi": [
+      {
+        "feature": "media_movel_7",
+        "importancia_media_abs": 12.56
+      },
+      {
+        "feature": "lag_7",
+        "importancia_media_abs": 12.27
+      },
+      {
+        "feature": "dia_semana",
+        "importancia_media_abs": 4.55
+      },
+      {
+        "feature": "lag_1",
+        "importancia_media_abs": 3.69
+      },
+      {
+        "feature": "lag_14",
+        "importancia_media_abs": 2.84
+      },
+      {
+        "feature": "media_movel_30",
+        "importancia_media_abs": 1.78
+      },
+      {
+        "feature": "mes",
+        "importancia_media_abs": 1.01
+      },
+      {
+        "feature": "fim_de_semana",
+        "importancia_media_abs": 0.43
+      },
+      {
+        "feature": "dia_do_mes",
+        "importancia_media_abs": 0.33
+      },
+      {
+        "feature": "feriado",
+        "importancia_media_abs": 0.3
+      }
+    ]
+  },
+  "risco_critico": {
+    "importancia": [
+      {
+        "rotulo": "mês de abertura",
+        "valor": 1.3208
+      },
+      {
+        "rotulo": "descrição contém \"application\"",
+        "valor": 0.7626
+      },
+      {
+        "rotulo": "grupo_designado = Team09",
+        "valor": 0.7512
+      },
+      {
+        "rotulo": "categoria = cat83",
+        "valor": 0.7292
+      },
+      {
+        "rotulo": "descrição contém \"storage\"",
+        "valor": 0.6385
+      },
+      {
+        "rotulo": "descrição contém \"id\"",
+        "valor": 0.56
+      },
+      {
+        "rotulo": "descrição contém \"local messages\"",
+        "valor": 0.5555
+      },
+      {
+        "rotulo": "descrição contém \"falha\"",
+        "valor": 0.5477
+      },
+      {
+        "rotulo": "descrição contém \"unavailable\"",
+        "valor": 0.5239
+      },
+      {
+        "rotulo": "descrição contém \"cpu\"",
+        "valor": 0.4722
+      }
+    ],
+    "exemplos": [
+      {
+        "numero": "INC8646083",
+        "equipe": "Team12",
+        "categoria": "Não informado",
+        "prioridade": "P2",
+        "proba": 0.988,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "mês de abertura",
+            "valor": "12",
+            "shap": -1.328
+          },
+          {
+            "rotulo": "grupo_designado = Team09",
+            "valor": "Team12",
+            "shap": 0.763
+          },
+          {
+            "rotulo": "categoria = cat83",
+            "valor": "Não informado",
+            "shap": -0.725
+          }
+        ]
+      },
+      {
+        "numero": "INC8646082",
+        "equipe": "Team12",
+        "categoria": "Não informado",
+        "prioridade": "P2",
+        "proba": 0.988,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "mês de abertura",
+            "valor": "12",
+            "shap": -1.328
+          },
+          {
+            "rotulo": "grupo_designado = Team09",
+            "valor": "Team12",
+            "shap": 0.763
+          },
+          {
+            "rotulo": "categoria = cat83",
+            "valor": "Não informado",
+            "shap": -0.725
+          }
+        ]
+      },
+      {
+        "numero": "INC8646077",
+        "equipe": "Team12",
+        "categoria": "Não informado",
+        "prioridade": "P2",
+        "proba": 0.988,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "mês de abertura",
+            "valor": "12",
+            "shap": -1.328
+          },
+          {
+            "rotulo": "grupo_designado = Team09",
+            "valor": "Team12",
+            "shap": 0.763
+          },
+          {
+            "rotulo": "categoria = cat83",
+            "valor": "Não informado",
+            "shap": -0.725
+          }
+        ]
+      },
+      {
+        "numero": "INC8646085",
+        "equipe": "Team12",
+        "categoria": "Não informado",
+        "prioridade": "P2",
+        "proba": 0.988,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "mês de abertura",
+            "valor": "12",
+            "shap": -1.328
+          },
+          {
+            "rotulo": "grupo_designado = Team09",
+            "valor": "Team12",
+            "shap": 0.763
+          },
+          {
+            "rotulo": "categoria = cat83",
+            "valor": "Não informado",
+            "shap": -0.725
+          }
+        ]
+      },
+      {
+        "numero": "INC8646081",
+        "equipe": "Team12",
+        "categoria": "Não informado",
+        "prioridade": "P2",
+        "proba": 0.988,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "mês de abertura",
+            "valor": "12",
+            "shap": -1.328
+          },
+          {
+            "rotulo": "grupo_designado = Team09",
+            "valor": "Team12",
+            "shap": 0.763
+          },
+          {
+            "rotulo": "categoria = cat83",
+            "valor": "Não informado",
+            "shap": -0.725
+          }
+        ]
+      }
+    ]
+  },
+  "risco_ola": {
+    "importancia": [
+      {
+        "rotulo": "descrição contém \"falha na\"",
+        "valor": 0.4991
+      },
+      {
+        "rotulo": "grupo_designado = Team14",
+        "valor": 0.4677
+      },
+      {
+        "rotulo": "descrição contém \"domain\"",
+        "valor": 0.4045
+      },
+      {
+        "rotulo": "descrição contém \"host\"",
+        "valor": 0.4009
+      },
+      {
+        "rotulo": "subcategoria = infrequent_sklearn",
+        "valor": 0.3688
+      },
+      {
+        "rotulo": "grupo_designado = Team05",
+        "valor": 0.3427
+      },
+      {
+        "rotulo": "descrição contém \"dominio\"",
+        "valor": 0.315
+      },
+      {
+        "rotulo": "categoria = cat29",
+        "valor": 0.2714
+      },
+      {
+        "rotulo": "descrição contém \"problem\"",
+        "valor": 0.2398
+      },
+      {
+        "rotulo": "descrição contém \"check\"",
+        "valor": 0.216
+      }
+    ],
+    "exemplos": [
+      {
+        "numero": "INC8595245",
+        "equipe": "Team11",
+        "categoria": "cat31",
+        "prioridade": "P3",
+        "proba": 0.83,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "grupo_designado = Team14",
+            "valor": "Team11",
+            "shap": -0.572
+          },
+          {
+            "rotulo": "descrição contém \"domain\"",
+            "valor": "ausente",
+            "shap": -0.407
+          },
+          {
+            "rotulo": "descrição contém \"problem\"",
+            "valor": "ausente",
+            "shap": -0.404
+          }
+        ]
+      },
+      {
+        "numero": "INC8639943",
+        "equipe": "Team09",
+        "categoria": "cat77",
+        "prioridade": "P2",
+        "proba": 0.824,
+        "real": false,
+        "drivers": [
+          {
+            "rotulo": "descrição contém \"falha na\"",
+            "valor": "ausente",
+            "shap": -0.496
+          },
+          {
+            "rotulo": "descrição contém \"domain\"",
+            "valor": "ausente",
+            "shap": -0.408
+          },
+          {
+            "rotulo": "descrição contém \"host\"",
+            "valor": "ausente",
+            "shap": 0.397
+          }
+        ]
+      },
+      {
+        "numero": "INC8601345",
+        "equipe": "Team11",
+        "categoria": "cat31",
+        "prioridade": "P3",
+        "proba": 0.822,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "grupo_designado = Team14",
+            "valor": "Team11",
+            "shap": -0.536
+          },
+          {
+            "rotulo": "descrição contém \"falha na\"",
+            "valor": "ausente",
+            "shap": -0.529
+          },
+          {
+            "rotulo": "descrição contém \"domain\"",
+            "valor": "ausente",
+            "shap": -0.408
+          }
+        ]
+      },
+      {
+        "numero": "INC8579361",
+        "equipe": "Team11",
+        "categoria": "cat31",
+        "prioridade": "P3",
+        "proba": 0.8,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "grupo_designado = Team14",
+            "valor": "Team11",
+            "shap": -0.536
+          },
+          {
+            "rotulo": "descrição contém \"falha na\"",
+            "valor": "ausente",
+            "shap": -0.529
+          },
+          {
+            "rotulo": "descrição contém \"domain\"",
+            "valor": "ausente",
+            "shap": -0.408
+          }
+        ]
+      },
+      {
+        "numero": "INC8572640",
+        "equipe": "Team09",
+        "categoria": "cat102",
+        "prioridade": "P3",
+        "proba": 0.795,
+        "real": true,
+        "drivers": [
+          {
+            "rotulo": "descrição contém \"falha na\"",
+            "valor": "ausente",
+            "shap": -0.529
+          },
+          {
+            "rotulo": "descrição contém \"domain\"",
+            "valor": "ausente",
+            "shap": -0.408
+          },
+          {
+            "rotulo": "grupo_designado = Team14",
+            "valor": "Team09",
+            "shap": -0.407
+          }
+        ]
+      }
+    ]
+  }
+}

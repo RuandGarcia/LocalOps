@@ -1,0 +1,15 @@
+.streamlit/secrets.toml
+.env
+*.env
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+.DS_Store
+.vscode/
+.idea/
+
+*.log

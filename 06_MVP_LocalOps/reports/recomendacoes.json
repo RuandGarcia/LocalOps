@@ -1,0 +1,369 @@
+{
+  "recomendacoes": [
+    {
+      "prioridade": 1,
+      "acao": "Redistribuir triagem automática de Team14 (concentra 92% dos incidentes em 30d)",
+      "motivo": "24.112 incidentes em 30 dias; 6% críticos",
+      "impacto": "Equilibra carga entre equipes e reduz risco de sobrecarga",
+      "publico": "Gestor de Operações",
+      "fonte": "carga_equipe"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Reforçar plantão para perímetro kpi em 07/01/2026 (D+7)",
+      "motivo": "Previsão de 81 incidentes (+78% vs. média 30d), nível MÉDIO",
+      "impacto": "Reduz fila no horário de pico e protege o OLA de P1/P2/P3",
+      "publico": "Gestor de Operações · Analista de NOC",
+      "fonte": "previsao"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Revisar escalonamento e runbooks de Team11",
+      "motivo": "8 violações de OLA em 30 dias (2% dos incidentes medidos)",
+      "impacto": "Reduz violações de OLA e risco de perda de KPI mensal",
+      "publico": "Engenheiro de SRE",
+      "fonte": "violacao_ola_equipe"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Revisar escalonamento e runbooks de Team07",
+      "motivo": "5 violações de OLA em 30 dias (23% dos incidentes medidos)",
+      "impacto": "Reduz violações de OLA e risco de perda de KPI mensal",
+      "publico": "Engenheiro de SRE",
+      "fonte": "violacao_ola_equipe"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Monitoramento priorizado e runbook para 'cat123'",
+      "motivo": "81% dos 31 incidentes são P2 (média geral 7%)",
+      "impacto": "Antecipação de incidentes críticos recorrentes",
+      "publico": "Engenheiro de SRE · Analista de NOC",
+      "fonte": "risco_categoria"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Monitoramento priorizado e runbook para 'cat35'",
+      "motivo": "75% dos 55 incidentes são P2 (média geral 7%)",
+      "impacto": "Antecipação de incidentes críticos recorrentes",
+      "publico": "Engenheiro de SRE · Analista de NOC",
+      "fonte": "risco_categoria"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Monitoramento priorizado e runbook para 'cat97'",
+      "motivo": "72% dos 43 incidentes são P2 (média geral 7%)",
+      "impacto": "Antecipação de incidentes críticos recorrentes",
+      "publico": "Engenheiro de SRE · Analista de NOC",
+      "fonte": "risco_categoria"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Monitoramento priorizado e runbook para 'cat73'",
+      "motivo": "65% dos 217 incidentes são P2 (média geral 7%)",
+      "impacto": "Antecipação de incidentes críticos recorrentes",
+      "publico": "Engenheiro de SRE · Analista de NOC",
+      "fonte": "risco_categoria"
+    },
+    {
+      "prioridade": 2,
+      "acao": "Monitoramento priorizado e runbook para 'cat94'",
+      "motivo": "53% dos 66 incidentes são P2 (média geral 7%)",
+      "impacto": "Antecipação de incidentes críticos recorrentes",
+      "publico": "Engenheiro de SRE · Analista de NOC",
+      "fonte": "risco_categoria"
+    }
+  ],
+  "alertas": [
+    {
+      "nivel": "BAIXO",
+      "segmento": "total",
+      "horizonte": 1,
+      "data": "2026-01-01",
+      "previsto": 862.3,
+      "variacao_pct": -1.7
+    },
+    {
+      "nivel": "BAIXO",
+      "segmento": "total",
+      "horizonte": 7,
+      "data": "2026-01-07",
+      "previsto": 934.7,
+      "variacao_pct": 6.5
+    },
+    {
+      "nivel": "BAIXO",
+      "segmento": "p2",
+      "horizonte": 1,
+      "data": "2026-01-01",
+      "previsto": 88.8,
+      "variacao_pct": 47.5
+    },
+    {
+      "nivel": "BAIXO",
+      "segmento": "p2",
+      "horizonte": 7,
+      "data": "2026-01-07",
+      "previsto": 76.4,
+      "variacao_pct": 26.9
+    },
+    {
+      "nivel": "BAIXO",
+      "segmento": "p3",
+      "horizonte": 1,
+      "data": "2026-01-01",
+      "previsto": 316.6,
+      "variacao_pct": 1.5
+    },
+    {
+      "nivel": "BAIXO",
+      "segmento": "p3",
+      "horizonte": 7,
+      "data": "2026-01-07",
+      "previsto": 225.7,
+      "variacao_pct": -27.7
+    },
+    {
+      "nivel": "BAIXO",
+      "segmento": "kpi",
+      "horizonte": 1,
+      "data": "2026-01-01",
+      "previsto": 42.3,
+      "variacao_pct": -6.6
+    },
+    {
+      "nivel": "MÉDIO",
+      "segmento": "kpi",
+      "horizonte": 7,
+      "data": "2026-01-07",
+      "previsto": 80.8,
+      "variacao_pct": 78.4
+    }
+  ],
+  "carga_equipes": [
+    {
+      "equipe": "Team14",
+      "incidentes_30d": 24112,
+      "pct_carga": 0.9156,
+      "kpi_30d": 584,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.064
+    },
+    {
+      "equipe": "Team05",
+      "incidentes_30d": 640,
+      "pct_carga": 0.0243,
+      "kpi_30d": 184,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.1672
+    },
+    {
+      "equipe": "Team11",
+      "incidentes_30d": 391,
+      "pct_carga": 0.0148,
+      "kpi_30d": 355,
+      "violacoes_30d": 8,
+      "pct_criticos": 0.0
+    },
+    {
+      "equipe": "Team09",
+      "incidentes_30d": 333,
+      "pct_carga": 0.0126,
+      "kpi_30d": 107,
+      "violacoes_30d": 1,
+      "pct_criticos": 0.1892
+    },
+    {
+      "equipe": "Team10",
+      "incidentes_30d": 243,
+      "pct_carga": 0.0092,
+      "kpi_30d": 12,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.0329
+    },
+    {
+      "equipe": "Team12",
+      "incidentes_30d": 217,
+      "pct_carga": 0.0082,
+      "kpi_30d": 17,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.2074
+    },
+    {
+      "equipe": "Team03",
+      "incidentes_30d": 217,
+      "pct_carga": 0.0082,
+      "kpi_30d": 24,
+      "violacoes_30d": 2,
+      "pct_criticos": 0.1014
+    },
+    {
+      "equipe": "Team02",
+      "incidentes_30d": 63,
+      "pct_carga": 0.0024,
+      "kpi_30d": 13,
+      "violacoes_30d": 2,
+      "pct_criticos": 0.0476
+    },
+    {
+      "equipe": "Team17",
+      "incidentes_30d": 36,
+      "pct_carga": 0.0014,
+      "kpi_30d": 25,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.1667
+    },
+    {
+      "equipe": "Team07",
+      "incidentes_30d": 33,
+      "pct_carga": 0.0013,
+      "kpi_30d": 22,
+      "violacoes_30d": 5,
+      "pct_criticos": 0.0606
+    },
+    {
+      "equipe": "Team01",
+      "incidentes_30d": 28,
+      "pct_carga": 0.0011,
+      "kpi_30d": 4,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.0
+    },
+    {
+      "equipe": "Team16",
+      "incidentes_30d": 7,
+      "pct_carga": 0.0003,
+      "kpi_30d": 5,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.0
+    },
+    {
+      "equipe": "Team08",
+      "incidentes_30d": 5,
+      "pct_carga": 0.0002,
+      "kpi_30d": 3,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.6
+    },
+    {
+      "equipe": "Team04",
+      "incidentes_30d": 4,
+      "pct_carga": 0.0002,
+      "kpi_30d": 1,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.25
+    },
+    {
+      "equipe": "Team15",
+      "incidentes_30d": 4,
+      "pct_carga": 0.0002,
+      "kpi_30d": 3,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.5
+    },
+    {
+      "equipe": "Team13",
+      "incidentes_30d": 1,
+      "pct_carga": 0.0,
+      "kpi_30d": 0,
+      "violacoes_30d": 0,
+      "pct_criticos": 0.0
+    }
+  ],
+  "risco_categorias": [
+    {
+      "categoria": "cat123",
+      "total": 31,
+      "pct_p2": 0.8065
+    },
+    {
+      "categoria": "cat35",
+      "total": 55,
+      "pct_p2": 0.7455
+    },
+    {
+      "categoria": "cat97",
+      "total": 43,
+      "pct_p2": 0.7209
+    },
+    {
+      "categoria": "cat73",
+      "total": 217,
+      "pct_p2": 0.6544
+    },
+    {
+      "categoria": "cat94",
+      "total": 66,
+      "pct_p2": 0.5303
+    },
+    {
+      "categoria": "cat36",
+      "total": 114,
+      "pct_p2": 0.4123
+    },
+    {
+      "categoria": "cat71",
+      "total": 483,
+      "pct_p2": 0.3727
+    },
+    {
+      "categoria": "cat137",
+      "total": 161,
+      "pct_p2": 0.3416
+    },
+    {
+      "categoria": "cat74",
+      "total": 30,
+      "pct_p2": 0.3333
+    },
+    {
+      "categoria": "cat77",
+      "total": 402,
+      "pct_p2": 0.3259
+    },
+    {
+      "categoria": "cat138",
+      "total": 31,
+      "pct_p2": 0.3226
+    },
+    {
+      "categoria": "cat76",
+      "total": 179,
+      "pct_p2": 0.3073
+    },
+    {
+      "categoria": "cat18",
+      "total": 52,
+      "pct_p2": 0.0769
+    },
+    {
+      "categoria": "cat141",
+      "total": 105,
+      "pct_p2": 0.0762
+    },
+    {
+      "categoria": "cat85",
+      "total": 204,
+      "pct_p2": 0.0392
+    },
+    {
+      "categoria": "cat91",
+      "total": 38,
+      "pct_p2": 0.0263
+    },
+    {
+      "categoria": "cat20",
+      "total": 47,
+      "pct_p2": 0.0213
+    },
+    {
+      "categoria": "cat103",
+      "total": 34,
+      "pct_p2": 0.0
+    },
+    {
+      "categoria": "cat31",
+      "total": 109,
+      "pct_p2": 0.0
+    }
+  ]
+}

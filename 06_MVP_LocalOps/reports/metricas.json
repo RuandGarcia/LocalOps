@@ -1,0 +1,307 @@
+{
+  "forecast": {
+    "wape_backtest": [
+      {
+        "serie": "kpi",
+        "horizonte": 1,
+        "modelo": "baseline",
+        "wape": 0.43956043956043955
+      },
+      {
+        "serie": "kpi",
+        "horizonte": 1,
+        "modelo": "prophet",
+        "wape": 0.25013016543324057
+      },
+      {
+        "serie": "kpi",
+        "horizonte": 1,
+        "modelo": "xgboost",
+        "wape": 0.19471986372392255
+      },
+      {
+        "serie": "kpi",
+        "horizonte": 7,
+        "modelo": "baseline",
+        "wape": 0.29930394431554525
+      },
+      {
+        "serie": "kpi",
+        "horizonte": 7,
+        "modelo": "prophet",
+        "wape": 0.3797992382781833
+      },
+      {
+        "serie": "kpi",
+        "horizonte": 7,
+        "modelo": "xgboost",
+        "wape": 0.3509690180732037
+      },
+      {
+        "serie": "p2",
+        "horizonte": 1,
+        "modelo": "baseline",
+        "wape": 0.8411949685534591
+      },
+      {
+        "serie": "p2",
+        "horizonte": 1,
+        "modelo": "prophet",
+        "wape": 0.7023569632857436
+      },
+      {
+        "serie": "p2",
+        "horizonte": 1,
+        "modelo": "xgboost",
+        "wape": 1.1573768471771817
+      },
+      {
+        "serie": "p2",
+        "horizonte": 7,
+        "modelo": "baseline",
+        "wape": 1.5341614906832297
+      },
+      {
+        "serie": "p2",
+        "horizonte": 7,
+        "modelo": "prophet",
+        "wape": 0.6183365985592687
+      },
+      {
+        "serie": "p2",
+        "horizonte": 7,
+        "modelo": "xgboost",
+        "wape": 0.5704733649149197
+      },
+      {
+        "serie": "p3",
+        "horizonte": 1,
+        "modelo": "baseline",
+        "wape": 0.4396384764364106
+      },
+      {
+        "serie": "p3",
+        "horizonte": 1,
+        "modelo": "prophet",
+        "wape": 0.29249508693763193
+      },
+      {
+        "serie": "p3",
+        "horizonte": 1,
+        "modelo": "xgboost",
+        "wape": 0.31681047492522896
+      },
+      {
+        "serie": "p3",
+        "horizonte": 7,
+        "modelo": "baseline",
+        "wape": 0.43971291866028706
+      },
+      {
+        "serie": "p3",
+        "horizonte": 7,
+        "modelo": "prophet",
+        "wape": 0.3595418735187385
+      },
+      {
+        "serie": "p3",
+        "horizonte": 7,
+        "modelo": "xgboost",
+        "wape": 0.2535699944747122
+      },
+      {
+        "serie": "total",
+        "horizonte": 1,
+        "modelo": "baseline",
+        "wape": 0.17231495531950766
+      },
+      {
+        "serie": "total",
+        "horizonte": 1,
+        "modelo": "prophet",
+        "wape": 0.14301419299134105
+      },
+      {
+        "serie": "total",
+        "horizonte": 1,
+        "modelo": "xgboost",
+        "wape": 0.22770227571499327
+      },
+      {
+        "serie": "total",
+        "horizonte": 7,
+        "modelo": "baseline",
+        "wape": 0.23453962437013284
+      },
+      {
+        "serie": "total",
+        "horizonte": 7,
+        "modelo": "prophet",
+        "wape": 0.10690913686447258
+      },
+      {
+        "serie": "total",
+        "horizonte": 7,
+        "modelo": "xgboost",
+        "wape": 0.16604135687760058
+      }
+    ],
+    "pesos_ensemble": {
+      "kpi": {
+        "1": {
+          "prophet": 0.43772024493928735,
+          "xgboost": 0.5622797550607126
+        },
+        "7": {
+          "prophet": 0.4802740335568731,
+          "xgboost": 0.5197259664431269
+        }
+      },
+      "p2": {
+        "1": {
+          "prophet": 0.6223346807299736,
+          "xgboost": 0.37766531927002644
+        },
+        "7": {
+          "prophet": 0.47986926627680976,
+          "xgboost": 0.5201307337231903
+        }
+      },
+      "p3": {
+        "1": {
+          "prophet": 0.5199533612603636,
+          "xgboost": 0.4800466387396363
+        },
+        "7": {
+          "prophet": 0.4135786757881203,
+          "xgboost": 0.5864213242118796
+        }
+      },
+      "total": {
+        "1": {
+          "prophet": 0.614222174994252,
+          "xgboost": 0.38577782500574787
+        },
+        "7": {
+          "prophet": 0.6083204122521307,
+          "xgboost": 0.39167958774786926
+        }
+      }
+    },
+    "gerado_em": "2026-09-11T13:39:28.627116+00:00"
+  },
+  "classificadores": {
+    "modelo_a_critico": {
+      "modelo": "risco_critico",
+      "n_treino": 50681,
+      "n_teste": 70254,
+      "taxa_base_teste": 0.1084778090927207,
+      "auc_roc_teste": 0.9867022312564002,
+      "auc_roc_treino": 0.9906374034370702,
+      "gap_treino_teste": 0.004,
+      "auc_pr": 0.8835797400669301,
+      "limiar_decisao": 0.3033501207828522,
+      "recall": 0.8233827581682194,
+      "precisao": 0.8623058952865191,
+      "positivos_teste": 7621,
+      "importancia_por_grupo": [
+        {
+          "grupo": "descrição (texto)",
+          "importancia_pct": 74.8
+        },
+        {
+          "grupo": "subcategoria",
+          "importancia_pct": 9.5
+        },
+        {
+          "grupo": "categoria",
+          "importancia_pct": 5.8
+        },
+        {
+          "grupo": "grupo_designado",
+          "importancia_pct": 5.6
+        },
+        {
+          "grupo": "produto",
+          "importancia_pct": 3.4
+        },
+        {
+          "grupo": "origem",
+          "importancia_pct": 0.6
+        },
+        {
+          "grupo": "mes_abertura",
+          "importancia_pct": 0.2
+        },
+        {
+          "grupo": "hora_abertura",
+          "importancia_pct": 0.1
+        },
+        {
+          "grupo": "dia_semana_abertura",
+          "importancia_pct": 0.0
+        },
+        {
+          "grupo": "fim_de_semana_abertura",
+          "importancia_pct": 0.0
+        }
+      ]
+    },
+    "modelo_b_ola": {
+      "modelo": "risco_violacao_ola",
+      "n_treino": 20417,
+      "n_teste": 4993,
+      "taxa_base_teste": 0.01001401962747847,
+      "auc_roc_teste": 0.8413129678332997,
+      "auc_roc_treino": 0.8735837528557246,
+      "gap_treino_teste": 0.032,
+      "auc_pr": 0.16979287822369338,
+      "limiar_decisao": 0.7525484561920166,
+      "recall": 0.22,
+      "precisao": 0.36666666666666664,
+      "positivos_teste": 50,
+      "importancia_por_grupo": [
+        {
+          "grupo": "descrição (texto)",
+          "importancia_pct": 58.1
+        },
+        {
+          "grupo": "grupo_designado",
+          "importancia_pct": 12.2
+        },
+        {
+          "grupo": "subcategoria",
+          "importancia_pct": 11.7
+        },
+        {
+          "grupo": "produto",
+          "importancia_pct": 6.1
+        },
+        {
+          "grupo": "categoria",
+          "importancia_pct": 5.7
+        },
+        {
+          "grupo": "fim_de_semana_abertura",
+          "importancia_pct": 1.8
+        },
+        {
+          "grupo": "hora_abertura",
+          "importancia_pct": 1.5
+        },
+        {
+          "grupo": "dia_semana_abertura",
+          "importancia_pct": 1.4
+        },
+        {
+          "grupo": "mes_abertura",
+          "importancia_pct": 1.3
+        },
+        {
+          "grupo": "origem",
+          "importancia_pct": 0.0
+        }
+      ]
+    }
+  }
+}

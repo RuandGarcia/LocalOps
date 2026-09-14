@@ -1,0 +1,442 @@
+{
+  "kpi": {
+    "d1": {
+      "baseline": {
+        "mae": 25.0,
+        "rmse": 29.14,
+        "wape": 0.44,
+        "vies_medio": -7.25,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 25.0,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 14.23,
+        "rmse": 18.38,
+        "wape": 0.25,
+        "vies_medio": -11.67,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 14.2,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.875
+      },
+      "xgboost": {
+        "mae": 11.07,
+        "rmse": 13.92,
+        "wape": 0.195,
+        "vies_medio": -8.4,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 11.1,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 12.09,
+        "rmse": 15.06,
+        "wape": 0.213,
+        "vies_medio": -9.83
+      }
+    },
+    "d7": {
+      "baseline": {
+        "mae": 16.12,
+        "rmse": 18.6,
+        "wape": 0.299,
+        "vies_medio": -8.62,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 16.1,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 20.46,
+        "rmse": 28.59,
+        "wape": 0.38,
+        "vies_medio": -19.33,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 20.5,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.875
+      },
+      "xgboost": {
+        "mae": 18.91,
+        "rmse": 24.42,
+        "wape": 0.351,
+        "vies_medio": -17.07,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 18.9,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 18.65,
+        "rmse": 26.15,
+        "wape": 0.346,
+        "vies_medio": -18.15
+      }
+    }
+  },
+  "p2": {
+    "d1": {
+      "baseline": {
+        "mae": 66.88,
+        "rmse": 97.44,
+        "wape": 0.841,
+        "vies_medio": -2.88,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 66.9,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 55.84,
+        "rmse": 71.27,
+        "wape": 0.702,
+        "vies_medio": -12.2,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 55.8,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.75
+      },
+      "xgboost": {
+        "mae": 92.01,
+        "rmse": 114.56,
+        "wape": 1.157,
+        "vies_medio": -46.21,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 92.0,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 69.5,
+        "rmse": 82.53,
+        "wape": 0.874,
+        "vies_medio": -25.05
+      }
+    },
+    "d7": {
+      "baseline": {
+        "mae": 92.62,
+        "rmse": 205.71,
+        "wape": 1.534,
+        "vies_medio": -83.62,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 92.6,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 37.33,
+        "rmse": 46.03,
+        "wape": 0.618,
+        "vies_medio": -35.25,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 37.3,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.75
+      },
+      "xgboost": {
+        "mae": 34.44,
+        "rmse": 41.57,
+        "wape": 0.57,
+        "vies_medio": -26.32,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 34.4,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 33.08,
+        "rmse": 40.73,
+        "wape": 0.548,
+        "vies_medio": -30.61
+      }
+    }
+  },
+  "p3": {
+    "d1": {
+      "baseline": {
+        "mae": 85.12,
+        "rmse": 101.53,
+        "wape": 0.44,
+        "vies_medio": 24.12,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 85.1,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 56.63,
+        "rmse": 72.31,
+        "wape": 0.292,
+        "vies_medio": 13.53,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 56.6,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.5
+      },
+      "xgboost": {
+        "mae": 61.34,
+        "rmse": 75.99,
+        "wape": 0.317,
+        "vies_medio": -12.14,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 61.3,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 41.57,
+        "rmse": 55.62,
+        "wape": 0.215,
+        "vies_medio": 1.21
+      }
+    },
+    "d7": {
+      "baseline": {
+        "mae": 114.88,
+        "rmse": 140.8,
+        "wape": 0.44,
+        "vies_medio": 18.38,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 114.9,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 93.93,
+        "rmse": 130.99,
+        "wape": 0.36,
+        "vies_medio": 72.63,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 93.9,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.5
+      },
+      "xgboost": {
+        "mae": 66.25,
+        "rmse": 76.64,
+        "wape": 0.254,
+        "vies_medio": 11.04,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 66.2,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 64.94,
+        "rmse": 90.08,
+        "wape": 0.249,
+        "vies_medio": 36.51
+      }
+    }
+  },
+  "total": {
+    "d1": {
+      "baseline": {
+        "mae": 127.75,
+        "rmse": 165.29,
+        "wape": 0.172,
+        "vies_medio": 10.0,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 127.8,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 106.03,
+        "rmse": 120.83,
+        "wape": 0.143,
+        "vies_medio": -35.25,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 106.0,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.875
+      },
+      "xgboost": {
+        "mae": 168.81,
+        "rmse": 237.4,
+        "wape": 0.228,
+        "vies_medio": -103.65,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": null,
+          "Quinta": 168.8,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 125.75,
+        "rmse": 155.65,
+        "wape": 0.17,
+        "vies_medio": -61.64
+      }
+    },
+    "d7": {
+      "baseline": {
+        "mae": 192.0,
+        "rmse": 250.17,
+        "wape": 0.235,
+        "vies_medio": -64.75,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 192.0,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "prophet": {
+        "mae": 87.52,
+        "rmse": 123.93,
+        "wape": 0.107,
+        "vies_medio": 8.51,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 87.5,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        },
+        "cobertura_ic95": 0.625
+      },
+      "xgboost": {
+        "mae": 135.93,
+        "rmse": 149.32,
+        "wape": 0.166,
+        "vies_medio": -32.11,
+        "erro_por_dia_semana": {
+          "Segunda": null,
+          "Terça": null,
+          "Quarta": 135.9,
+          "Quinta": null,
+          "Sexta": null,
+          "Sábado": null,
+          "Domingo": null
+        }
+      },
+      "ensemble": {
+        "mae": 100.18,
+        "rmse": 121.29,
+        "wape": 0.122,
+        "vies_medio": -7.4
+      }
+    }
+  }
+}
