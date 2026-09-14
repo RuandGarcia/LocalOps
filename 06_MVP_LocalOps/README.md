@@ -1,14 +1,17 @@
-# LocalOps — núcleo preditivo (backend)
+# LocalOps — plataforma AIOps preditiva (MVP final · Sprint 4)
 
-Implementação do pacote `localops/` descrito na arquitetura da Sprint 3
-(Challenge AIOps · Locaweb × FIAP · Equipe Paladinos): ETL, feature
-engineering, previsão de volume (Prophet + XGBoost), classificadores de
-risco, explicabilidade (SHAP), recomendações operacionais, agente
-conversacional offline e API REST.
+Challenge AIOps · Locaweb × FIAP 2026 · Equipe Paladinos · Turma 2TSCOA
 
-**O dashboard (Streamlit) não está neste pacote** — a equipe já o tem pronto.
-Este README explica exatamente o que o dashboard precisa ler para se
-conectar aos artefatos gerados aqui.
+Plataforma que prevê o volume de incidentes de TI (D+1/D+7), explica os
+riscos por trás de cada previsão (SHAP), localiza onde a operação precisa
+agir (IncidentMap por equipe × categoria) e recomenda ações — com um
+dashboard interativo (Streamlit, 6 telas) e um agente conversacional (IA
+online via Gemini, com fallback automático para um motor de regras 100%
+offline).
+
+Este repositório contém a solução completa: ETL, feature engineering,
+modelos (Prophet + XGBoost), classificadores de risco, explicabilidade,
+recomendador, API REST, dashboard e agente de IA.
 
 ## O que foi implementado
 
@@ -24,6 +27,7 @@ conectar aos artefatos gerados aqui.
 | `localops/agent.py` | Agente conversacional: IA online (Gemini, RAG sobre os artefatos atuais) com fallback automático pro motor de regras offline e determinístico (previsão, tendência, comparativo, ranking, sazonalidade) |
 | `localops/api/main.py` | API FastAPI com 7 endpoints (`/health`, `/forecast`, `/alerts`, `/recommendations`, `/explain`, `/risks/teams`, `/agent`) |
 | `localops/store.py` | Acesso único aos artefatos (SQLite/parquet/joblib/json) — use isto no dashboard em vez de ler os arquivos diretamente |
+| `dashboard/app.py`, `dashboard/views.py` | Dashboard Streamlit (6 telas): previsões, explicabilidade, IncidentMap, recomendações e agente de IA |
 | `run_pipeline.py` | Roda tudo, na ordem certa |
 
 ## Como rodar
@@ -35,7 +39,8 @@ pip install -r requirements.txt
 
 python run_pipeline.py          # ~2-4 min (a maior parte é o backtest do Prophet)
 
-uvicorn localops.api.main:app --reload   # API em http://localhost:8000/docs
+streamlit run dashboard/app.py           # Dashboard em http://localhost:8501
+uvicorn localops.api.main:app --reload   # API em http://localhost:8000/docs (opcional)
 ```
 
 `data/LW-DATASET.xlsx` já está incluído neste pacote (mesma base de 122.543
@@ -266,9 +271,10 @@ Esse diagnóstico completo (matriz de confusão, análise de resíduo da
 previsão, tudo isso) roda com `python -m localops.diagnostics` — ver a seção
 "Diagnóstico dos modelos" mais acima.
 
-## Próximos passos sugeridos
+## Status e evolução futura
 
-1. Conectar o dashboard existente aos helpers de `localops/store.py`.
+1. ~~Conectar o dashboard aos helpers de `localops/store.py`~~ — feito: o
+   dashboard (`dashboard/`) já lê todos os artefatos por `localops/store.py`.
 2. ~~Validar a regra de violação de OLA com o time~~ — feito: a planilha já
    trazia o resultado oficial pronto (`Entrou para KPI?` / `KPI Violado?`);
    passamos a usar essas colunas em vez de recalcular, e os números batem
@@ -280,6 +286,10 @@ previsão, tudo isso) roda com `python -m localops.diagnostics` — ver a seçã
    verdade (248 casos), o próximo ganho de estabilidade viria de mais dados
    históricos de violação — não é algo pra resolver só ajustando
    hiperparâmetros.
-4. Sprint 4 (conforme backlog da apresentação): Airflow para retreino diário,
-   MLflow, agente com LLM usando `localops/agent.py` como conjunto de *tools*
-   determinísticas.
+4. ~~Agente conversacional com IA~~ — feito: `localops/agent.py` já usa
+   Gemini (RAG sobre os artefatos atuais) com fallback automático para o
+   motor de regras offline.
+5. Fora do escopo deste MVP, mapeado como evolução futura do produto:
+   dashboard em React consumindo a API FastAPI, PostgreSQL + Docker Compose
+   (hoje SQLite, por portabilidade), Airflow para retreino diário e MLflow
+   para versionamento de experimentos.
