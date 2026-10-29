@@ -1,0 +1,13 @@
+[project]
+name = "localops-api"
+version = "0.2.0"
+description = "LocalOps API /v1, MCP server and copilot"
+requires-python = ">=3.11"
+dependencies = ["fastapi", "uvicorn[standard]", "pydantic>=2", "httpx", "pandas", "openpyxl", "mcp>=2.3", "pypdf", "fpdf2", "markdown"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["localops_api"]

@@ -1,0 +1,107 @@
+[
+ {
+  "tpl": "Problem: Check Application Monitoring",
+  "alarmes": 6733,
+  "exigiram_pessoa": 20,
+  "prob_media": 0.003,
+  "mantidos": 1231
+ },
+ {
+  "tpl": "Problem: Disk I/O is overloaded on IC#",
+  "alarmes": 4997,
+  "exigiram_pessoa": 1,
+  "prob_media": 0.0,
+  "mantidos": 0
+ },
+ {
+  "tpl": "Problem: Lack of free swap space #m <#%",
+  "alarmes": 2567,
+  "exigiram_pessoa": 11,
+  "prob_media": 0.1110000014,
+  "mantidos": 2567
+ },
+ {
+  "tpl": "Problem: Processor load is too high P#",
+  "alarmes": 1944,
+  "exigiram_pessoa": 1,
+  "prob_media": 0.0820000023,
+  "mantidos": 1881
+ },
+ {
+  "tpl": "Problem: IC# - IC# - Servidores com erro no Hypervisor: #",
+  "alarmes": 1165,
+  "exigiram_pessoa": 37,
+  "prob_media": 0.0370000005,
+  "mantidos": 641
+ },
+ {
+  "tpl": "Problem: Check Application Monitoring VIP",
+  "alarmes": 872,
+  "exigiram_pessoa": 0,
+  "prob_media": 0.0,
+  "mantidos": 18
+ },
+ {
+  "tpl": "Problem: Unavailable by ICMP ping",
+  "alarmes": 714,
+  "exigiram_pessoa": 206,
+  "prob_media": 0.3210000098,
+  "mantidos": 714
+ },
+ {
+  "tpl": "Problem: Apache Busy Workers",
+  "alarmes": 652,
+  "exigiram_pessoa": 4,
+  "prob_media": 0.0350000001,
+  "mantidos": 645
+ },
+ {
+  "tpl": "Problem: Free disk space is less than #% on volume /",
+  "alarmes": 621,
+  "exigiram_pessoa": 262,
+  "prob_media": 0.3019999862,
+  "mantidos": 621
+ },
+ {
+  "tpl": "Problem: IOwait grown up CPU queue",
+  "alarmes": 423,
+  "exigiram_pessoa": 2,
+  "prob_media": 0.0,
+  "mantidos": 0
+ },
+ {
+  "tpl": "Problem: Alarm Application Monitoring feeds Message: HTTPSCo",
+  "alarmes": 406,
+  "exigiram_pessoa": 0,
+  "prob_media": 0.0,
+  "mantidos": 0
+ },
+ {
+  "tpl": "Problem: CPU Idle is less than #%",
+  "alarmes": 325,
+  "exigiram_pessoa": 2,
+  "prob_media": 0.1150000021,
+  "mantidos": 325
+ },
+ {
+  "tpl": "Problem: DNSDist Latency ># queries",
+  "alarmes": 287,
+  "exigiram_pessoa": 2,
+  "prob_media": 0.001,
+  "mantidos": 0
+ },
+ {
+  "tpl": "Problem: Check PostgreSQL Replication Slave",
+  "alarmes": 261,
+  "exigiram_pessoa": 2,
+  "prob_media": 0.0040000002,
+  "mantidos": 76
+ },
+ {
+  "tpl": "Problem: Memory is less then #%",
+  "alarmes": 210,
+  "exigiram_pessoa": 8,
+  "prob_media": 0.0040000002,
+  "mantidos": 37
+ }
+]

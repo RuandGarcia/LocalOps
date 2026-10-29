@@ -1,0 +1,34 @@
+# Base bruta e artefatos gerados ficam fora do git (E5 do plano): rodar o pipeline localmente.
+06_MVP_LocalOps/data/
+06_MVP_LocalOps/models/
+
+# Impeccable: binario baixado pelo launcher; config local da maquina
+.claude/skills/impeccable/scripts/bin/
+.agents/skills/impeccable/scripts/bin/
+.claude/settings.local.json
+
+# Impeccable: estado de execucao local
+.impeccable/questions/
+.impeccable/config.local.json
+
+# S2: base bruta e caches por incidente (nunca versionar)
+dados/
+.venv/
+*.egg-info/
+__pycache__/
+
+# Front: URL local da API (não versionar)
+apps/web/.env.local
+
+# Ingestion state written by the pipeline worker (D20)
+artefatos/ingestao.json
+
+# Deploy bundle built by git archive (handoff/DEPLOY-0.3.0-ingestao.md)
+localops-*.tar
+
+# Browser profile left by screen captures: cookies and autofill, never versioned
+docs/perfil/
+
+# Build and render by-products
+*.tsbuildinfo
+apps/video/*.log

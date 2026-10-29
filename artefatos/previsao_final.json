@@ -1,0 +1,102 @@
+[
+ {
+  "serie": "total",
+  "h": 1,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-01",
+  "modelo": "mediana",
+  "previsto": 795.428,
+  "ic_inf": 568.094,
+  "ic_sup": 1022.761
+ },
+ {
+  "serie": "total",
+  "h": 7,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-07",
+  "modelo": "mediana",
+  "previsto": 877.5,
+  "ic_inf": 540.189,
+  "ic_sup": 1214.811
+ },
+ {
+  "serie": "humano",
+  "h": 1,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-01",
+  "modelo": "mediana",
+  "previsto": 26.0,
+  "ic_inf": 16.25,
+  "ic_sup": 35.75
+ },
+ {
+  "serie": "humano",
+  "h": 7,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-07",
+  "modelo": "mediana",
+  "previsto": 63.0,
+  "ic_inf": 38.594,
+  "ic_sup": 87.406
+ },
+ {
+  "serie": "p2",
+  "h": 1,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-01",
+  "modelo": "mediana",
+  "previsto": 48.145,
+  "ic_inf": 15.926,
+  "ic_sup": 80.363
+ },
+ {
+  "serie": "p2",
+  "h": 7,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-07",
+  "modelo": "mediana",
+  "previsto": 42.25,
+  "ic_inf": 13.82,
+  "ic_sup": 70.68
+ },
+ {
+  "serie": "p3",
+  "h": 1,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-01",
+  "modelo": "mediana",
+  "previsto": 368.067,
+  "ic_inf": 192.61,
+  "ic_sup": 543.525
+ },
+ {
+  "serie": "p3",
+  "h": 7,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-07",
+  "modelo": "sazonal_4sem",
+  "previsto": 327.25,
+  "ic_inf": 166.898,
+  "ic_sup": 487.602
+ },
+ {
+  "serie": "kpi",
+  "h": 1,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-01",
+  "modelo": "mediana",
+  "previsto": 22.0,
+  "ic_inf": 15.47,
+  "ic_sup": 28.53
+ },
+ {
+  "serie": "kpi",
+  "h": 7,
+  "origem": "2025-12-31",
+  "alvo": "2026-01-07",
+  "modelo": "mediana",
+  "previsto": 42.0,
+  "ic_inf": 29.366,
+  "ic_sup": 54.634
+ }
+]

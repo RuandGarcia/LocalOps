@@ -1,0 +1,404 @@
+{
+ "mes": "2025-12",
+ "n_alarmes": 26507,
+ "base_prob": 0.1067,
+ "taxa_humano": 0.0579,
+ "limiar": 0.004464,
+ "importancia": [
+  {
+   "feature": "tpl",
+   "media_abs": 3.525899887084961,
+   "peso_pct": 72.6
+  },
+  {
+   "feature": "n24h_ci",
+   "media_abs": 0.36410000920295715,
+   "peso_pct": 7.5
+  },
+  {
+   "feature": "n24h_tpl",
+   "media_abs": 0.2849000096321106,
+   "peso_pct": 5.9
+  },
+  {
+   "feature": "hora",
+   "media_abs": 0.2750000059604645,
+   "peso_pct": 5.7
+  },
+  {
+   "feature": "n1h_tpl",
+   "media_abs": 0.2669000029563904,
+   "peso_pct": 5.5
+  },
+  {
+   "feature": "dow",
+   "media_abs": 0.14139999449253082,
+   "peso_pct": 2.9
+  }
+ ],
+ "dependencia": {
+  "hora": [
+   {
+    "faixa": "0",
+    "n": 1383,
+    "shap_medio": 0.119
+   },
+   {
+    "faixa": "1",
+    "n": 1101,
+    "shap_medio": -0.403
+   },
+   {
+    "faixa": "2",
+    "n": 795,
+    "shap_medio": -0.268
+   },
+   {
+    "faixa": "3",
+    "n": 2088,
+    "shap_medio": -0.261
+   },
+   {
+    "faixa": "4",
+    "n": 1524,
+    "shap_medio": -0.345
+   },
+   {
+    "faixa": "5",
+    "n": 766,
+    "shap_medio": -0.055
+   },
+   {
+    "faixa": "6",
+    "n": 1579,
+    "shap_medio": -0.066
+   },
+   {
+    "faixa": "7",
+    "n": 649,
+    "shap_medio": -0.017
+   },
+   {
+    "faixa": "8",
+    "n": 794,
+    "shap_medio": -0.056
+   },
+   {
+    "faixa": "9",
+    "n": 1160,
+    "shap_medio": -0.152
+   },
+   {
+    "faixa": "10",
+    "n": 1146,
+    "shap_medio": -0.083
+   },
+   {
+    "faixa": "11",
+    "n": 1011,
+    "shap_medio": -0.078
+   },
+   {
+    "faixa": "12",
+    "n": 954,
+    "shap_medio": -0.04
+   },
+   {
+    "faixa": "13",
+    "n": 986,
+    "shap_medio": -0.069
+   },
+   {
+    "faixa": "14",
+    "n": 1007,
+    "shap_medio": 0.012
+   },
+   {
+    "faixa": "15",
+    "n": 972,
+    "shap_medio": -0.005
+   },
+   {
+    "faixa": "16",
+    "n": 1047,
+    "shap_medio": 0.017
+   },
+   {
+    "faixa": "17",
+    "n": 1047,
+    "shap_medio": 0.261
+   },
+   {
+    "faixa": "18",
+    "n": 1115,
+    "shap_medio": -0.1
+   },
+   {
+    "faixa": "19",
+    "n": 923,
+    "shap_medio": -0.15
+   },
+   {
+    "faixa": "20",
+    "n": 960,
+    "shap_medio": -0.234
+   },
+   {
+    "faixa": "21",
+    "n": 1137,
+    "shap_medio": -0.162
+   },
+   {
+    "faixa": "22",
+    "n": 1075,
+    "shap_medio": -0.153
+   },
+   {
+    "faixa": "23",
+    "n": 1288,
+    "shap_medio": -0.258
+   }
+  ],
+  "dow": [
+   {
+    "faixa": "0",
+    "n": 4726,
+    "shap_medio": -0.028
+   },
+   {
+    "faixa": "1",
+    "n": 4553,
+    "shap_medio": -0.049
+   },
+   {
+    "faixa": "2",
+    "n": 4087,
+    "shap_medio": -0.009
+   },
+   {
+    "faixa": "3",
+    "n": 3084,
+    "shap_medio": 0.023
+   },
+   {
+    "faixa": "4",
+    "n": 3233,
+    "shap_medio": 0.025
+   },
+   {
+    "faixa": "5",
+    "n": 3481,
+    "shap_medio": -0.103
+   },
+   {
+    "faixa": "6",
+    "n": 3343,
+    "shap_medio": -0.339
+   }
+  ],
+  "n1h_tpl": [
+   {
+    "faixa": "0",
+    "n": 4537,
+    "shap_medio": 0.045
+   },
+   {
+    "faixa": "1",
+    "n": 2443,
+    "shap_medio": -0.096
+   },
+   {
+    "faixa": "2–3",
+    "n": 3268,
+    "shap_medio": -0.142
+   },
+   {
+    "faixa": "4–7",
+    "n": 5162,
+    "shap_medio": -0.326
+   },
+   {
+    "faixa": "8–15",
+    "n": 6708,
+    "shap_medio": 0.071
+   },
+   {
+    "faixa": "16+",
+    "n": 4389,
+    "shap_medio": -0.367
+   }
+  ],
+  "n24h_tpl": [
+   {
+    "faixa": "0",
+    "n": 1253,
+    "shap_medio": -0.342
+   },
+   {
+    "faixa": "1",
+    "n": 741,
+    "shap_medio": -0.132
+   },
+   {
+    "faixa": "2–3",
+    "n": 981,
+    "shap_medio": -0.035
+   },
+   {
+    "faixa": "4–7",
+    "n": 1236,
+    "shap_medio": -0.043
+   },
+   {
+    "faixa": "8–15",
+    "n": 1752,
+    "shap_medio": 0.019
+   },
+   {
+    "faixa": "16+",
+    "n": 20544,
+    "shap_medio": 0.014
+   }
+  ],
+  "n24h_ci": [
+   {
+    "faixa": "0",
+    "n": 5252,
+    "shap_medio": 0.201
+   },
+   {
+    "faixa": "1",
+    "n": 3339,
+    "shap_medio": 0.044
+   },
+   {
+    "faixa": "2–3",
+    "n": 4297,
+    "shap_medio": -0.069
+   },
+   {
+    "faixa": "4–7",
+    "n": 4411,
+    "shap_medio": -0.258
+   },
+   {
+    "faixa": "8–15",
+    "n": 2431,
+    "shap_medio": -0.363
+   },
+   {
+    "faixa": "16+",
+    "n": 6777,
+    "shap_medio": -0.694
+   }
+  ]
+ },
+ "tipos": {
+  "sobem": [
+   {
+    "tpl": "Problem: Hank Instalation Recipes::Domains::Domain::IC#::Act",
+    "n": 60,
+    "shap_medio": 6.072,
+    "taxa_humano": 0.917
+   },
+   {
+    "tpl": "Problem: /backup: Free disk space is less than #",
+    "n": 41,
+    "shap_medio": 6.065,
+    "taxa_humano": 0.366
+   },
+   {
+    "tpl": "Problem: Postfix-Local with # messages on IC#",
+    "n": 30,
+    "shap_medio": 5.921,
+    "taxa_humano": 0.767
+   },
+   {
+    "tpl": "Problem: Postfix with # messages on IC#",
+    "n": 73,
+    "shap_medio": 3.862,
+    "taxa_humano": 0.822
+   },
+   {
+    "tpl": "Problem: Error Backup Inc Bacula",
+    "n": 83,
+    "shap_medio": 2.389,
+    "taxa_humano": 0.892
+   },
+   {
+    "tpl": "Problem: VMs is Running",
+    "n": 33,
+    "shap_medio": 2.376,
+    "taxa_humano": 0.818
+   },
+   {
+    "tpl": "Problem: Check PMTA IC# Queue",
+    "n": 50,
+    "shap_medio": 2.209,
+    "taxa_humano": 0.42
+   },
+   {
+    "tpl": "Problem: Error Backup Full Bacula",
+    "n": 114,
+    "shap_medio": 2.162,
+    "taxa_humano": 0.298
+   }
+  ],
+  "descem": [
+   {
+    "tpl": "Problem: IOwait grown up CPU queue",
+    "n": 423,
+    "shap_medio": -7.483,
+    "taxa_humano": 0.005
+   },
+   {
+    "tpl": "Problem: Alarm Application Monitoring feeds Message: HTTPSCo",
+    "n": 406,
+    "shap_medio": -7.369,
+    "taxa_humano": 0.0
+   },
+   {
+    "tpl": "Problem: Disk I/O is overloaded on IC#",
+    "n": 4997,
+    "shap_medio": -7.354,
+    "taxa_humano": 0.0
+   },
+   {
+    "tpl": "Problem: CPU Used in %",
+    "n": 165,
+    "shap_medio": -7.177,
+    "taxa_humano": 0.0
+   },
+   {
+    "tpl": "Problem: Check HTTP Port is Down",
+    "n": 59,
+    "shap_medio": -6.118,
+    "taxa_humano": 0.0
+   },
+   {
+    "tpl": "Problem: Check Service Nginx isn´t Running",
+    "n": 73,
+    "shap_medio": -6.111,
+    "taxa_humano": 0.0
+   },
+   {
+    "tpl": "Problem: Memory Free is less then #%",
+    "n": 72,
+    "shap_medio": -6.087,
+    "taxa_humano": 0.0
+   },
+   {
+    "tpl": "Problem: Check Application Monitoring VIP",
+    "n": 872,
+    "shap_medio": -6.046,
+    "taxa_humano": 0.0
+   }
+  ]
+ },
+ "exemplos": [
+  "INC8623149",
+  "INC8629839",
+  "INC8640212"
+ ],
+ "previsao": "A previsão usa a mediana de modelos simples (no P3 em 7 dias, a média sazonal de 4 semanas); SHAP não se aplica. O porquê dela é o contexto (médias de 7 e 28 dias, mesmo dia da semana passada)."
+}

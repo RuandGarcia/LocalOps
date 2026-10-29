@@ -1,0 +1,342 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fundo: #08090b;
+  --color-trilho: #0b0c0e;
+  --color-superficie: #101114;
+  --color-superficie-2: #16171b;
+  --color-borda: #25272d;
+  --color-texto: #edeef0;
+  --color-muted: #8b909a;
+  --color-faint: #6b707a;
+  --color-agente: #a5b4fc;
+  --color-agente-1: #818cf8;
+  --color-agente-2: #22d3ee;
+  --color-humano: #fbbf24;
+  --color-risco: #fb7185;
+  --color-ok: #34d399;
+
+  --font-sans: "Geist Variable", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, "Cascadia Mono", monospace;
+
+  --shadow-painel: inset 0 1px 0 rgb(255 255 255 / 0.04), 0 24px 48px -24px rgb(0 0 0 / 0.7);
+}
+
+html {
+  background: var(--color-fundo);
+  color: var(--color-texto);
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum" 1;
+  -webkit-font-smoothing: antialiased;
+  color-scheme: dark;
+  caret-color: var(--color-agente);
+  scrollbar-color: var(--color-borda) var(--color-fundo);
+}
+
+body {
+  /* Spotlight from the top: the one ambient gradient of the page. */
+  background:
+    radial-gradient(1100px 480px at 62% -12%, rgb(129 140 248 / 0.16), transparent 62%),
+    radial-gradient(700px 320px at 92% 4%, rgb(34 211 238 / 0.07), transparent 60%),
+    var(--color-fundo);
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgb(129 140 248 / 0.35);
+  color: var(--color-texto);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-agente);
+  outline-offset: 2px;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+.painel {
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.025), transparent 40%), var(--color-superficie);
+  border: 1px solid var(--color-borda);
+  border-radius: 14px;
+  box-shadow: var(--shadow-painel);
+}
+
+/* The agent's entry: a slow gradient ring around the panel while it waits for the operator. */
+@property --giro {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.anel-agente {
+  position: relative;
+  isolation: isolate;
+}
+
+.anel-agente::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: 15px;
+  padding: 1px;
+  background: conic-gradient(from var(--giro), transparent 0 55%, var(--color-agente-1) 70%, var(--color-agente-2) 82%, transparent 92%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: girar 7s linear infinite;
+}
+
+.anel-agente::after {
+  content: "";
+  position: absolute;
+  inset: -40px 0 auto;
+  height: 180px;
+  z-index: -2;
+  background: radial-gradient(closest-side, rgb(129 140 248 / 0.18), transparent);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.anel-agente[data-visto="true"]::before {
+  animation: none;
+  background: linear-gradient(var(--color-borda), var(--color-borda));
+}
+
+.anel-agente[data-visto="true"]::after {
+  opacity: 0;
+  transition: opacity 600ms ease-out;
+}
+
+@keyframes girar {
+  to {
+    --giro: 360deg;
+  }
+}
+
+.orbe-agente {
+  background: radial-gradient(circle at 30% 30%, #e0e7ff, var(--color-agente-1) 45%, #155e75 100%);
+  box-shadow: 0 0 18px rgb(129 140 248 / 0.55);
+}
+
+.ponto-humano {
+  background: var(--color-humano);
+  box-shadow: 0 0 10px rgb(251 191 36 / 0.65);
+}
+
+.numero-brilho {
+  text-shadow: 0 0 28px rgb(165 180 252 / 0.35);
+}
+
+@keyframes subir {
+  from {
+    opacity: 0.35;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* One orchestrated entrance: sections settle in order once, from a visible end state. */
+.entra {
+  animation: subir 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(var(--ordem, 0) * 90ms);
+}
+
+@keyframes pulso {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.pulso {
+  animation: pulso 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entra,
+  .pulso,
+  .anel-agente::before {
+    animation: none;
+  }
+  * {
+    transition-duration: 0ms !important;
+  }
+}
+
+/* Booth presentation mode: progress segments and one scene transition. */
+@keyframes encher {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cena {
+  from {
+    opacity: 0.3;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.cena-entra {
+  animation: cena 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Outgoing scene: lifts and blurs away while the next one settles in (one continuous take). */
+@keyframes cena-sai {
+  from {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px) scale(1.02);
+    filter: blur(6px);
+  }
+}
+
+.cena-sai {
+  animation: cena-sai 450ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Slow camera drift on product screens, like a motion video. */
+@keyframes deriva {
+  from {
+    transform: scale(1) translateY(0);
+  }
+  to {
+    transform: scale(1.035) translateY(-6px);
+  }
+}
+
+.deriva {
+  animation: deriva 14s ease-out both;
+}
+
+@keyframes deriva-abertura {
+  from {
+    transform: rotateX(18deg) translateY(24px);
+  }
+  to {
+    transform: rotateX(8deg) translateY(0);
+  }
+}
+
+.deriva-abertura {
+  animation: deriva-abertura 5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes barra-cresce {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.barra-cresce {
+  transform-origin: left;
+  animation: barra-cresce 1400ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes legenda {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.legenda-entra {
+  animation: legenda 700ms 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Ambient light that keeps moving behind every scene. */
+@keyframes fundo-vivo {
+  0%,
+  100% {
+    background-position: 50% 0%, 85% 100%;
+  }
+  50% {
+    background-position: 35% 10%, 70% 90%;
+  }
+}
+
+.fundo-vivo {
+  background:
+    radial-gradient(900px 520px at 50% -10%, rgb(129 140 248 / 0.22), transparent 65%),
+    radial-gradient(600px 400px at 85% 110%, rgb(34 211 238 / 0.08), transparent 60%);
+  background-size: 140% 140%, 140% 140%;
+  animation: fundo-vivo 24s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cena-entra,
+  .cena-sai,
+  .deriva,
+  .deriva-abertura,
+  .barra-cresce,
+  .legenda-entra,
+  .fundo-vivo {
+    animation: none;
+  }
+  .deriva-abertura {
+    transform: rotateX(8deg);
+  }
+}
+
+/* Booth presentation, product tour: a live screen in a lit browser frame. */
+.moldura-tela {
+  background: var(--color-fundo);
+  border: 1px solid rgb(255 255 255 / 0.09);
+  box-shadow:
+    0 0 0 1px rgb(129 140 248 / 0.08),
+    0 40px 120px -30px rgb(129 140 248 / 0.35),
+    0 30px 60px -30px rgb(0 0 0 / 0.9);
+}
+
+.anel-destaque {
+  border: 2px solid var(--color-agente);
+  box-shadow:
+    0 0 0 9999px rgb(8 9 11 / 0.45),
+    0 0 32px rgb(129 140 248 / 0.45);
+}
+
+.titulo-grad {
+  background: linear-gradient(180deg, #ffffff 30%, #9ca3af);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sobrancelha {
+  background: linear-gradient(90deg, var(--color-agente-1), var(--color-agente-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,219 @@
+[
+ {
+  "data": "2025-12-01",
+  "alarmes": 956,
+  "exigiram_pessoa": 65,
+  "fila_filtrada": 530,
+  "pessoa_fora_da_fila": 5
+ },
+ {
+  "data": "2025-12-02",
+  "alarmes": 728,
+  "exigiram_pessoa": 62,
+  "fila_filtrada": 385,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-03",
+  "alarmes": 675,
+  "exigiram_pessoa": 47,
+  "fila_filtrada": 301,
+  "pessoa_fora_da_fila": 3
+ },
+ {
+  "data": "2025-12-04",
+  "alarmes": 706,
+  "exigiram_pessoa": 57,
+  "fila_filtrada": 372,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-05",
+  "alarmes": 835,
+  "exigiram_pessoa": 51,
+  "fila_filtrada": 482,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-06",
+  "alarmes": 743,
+  "exigiram_pessoa": 43,
+  "fila_filtrada": 337,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-07",
+  "alarmes": 734,
+  "exigiram_pessoa": 55,
+  "fila_filtrada": 347,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-08",
+  "alarmes": 724,
+  "exigiram_pessoa": 50,
+  "fila_filtrada": 413,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-09",
+  "alarmes": 837,
+  "exigiram_pessoa": 82,
+  "fila_filtrada": 508,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-10",
+  "alarmes": 760,
+  "exigiram_pessoa": 58,
+  "fila_filtrada": 416,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-11",
+  "alarmes": 712,
+  "exigiram_pessoa": 49,
+  "fila_filtrada": 356,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-12",
+  "alarmes": 696,
+  "exigiram_pessoa": 41,
+  "fila_filtrada": 301,
+  "pessoa_fora_da_fila": 0
+ },
+ {
+  "data": "2025-12-13",
+  "alarmes": 749,
+  "exigiram_pessoa": 80,
+  "fila_filtrada": 385,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-14",
+  "alarmes": 690,
+  "exigiram_pessoa": 34,
+  "fila_filtrada": 279,
+  "pessoa_fora_da_fila": 5
+ },
+ {
+  "data": "2025-12-15",
+  "alarmes": 802,
+  "exigiram_pessoa": 156,
+  "fila_filtrada": 481,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-16",
+  "alarmes": 1033,
+  "exigiram_pessoa": 64,
+  "fila_filtrada": 397,
+  "pessoa_fora_da_fila": 9
+ },
+ {
+  "data": "2025-12-17",
+  "alarmes": 990,
+  "exigiram_pessoa": 58,
+  "fila_filtrada": 621,
+  "pessoa_fora_da_fila": 0
+ },
+ {
+  "data": "2025-12-18",
+  "alarmes": 964,
+  "exigiram_pessoa": 71,
+  "fila_filtrada": 472,
+  "pessoa_fora_da_fila": 3
+ },
+ {
+  "data": "2025-12-19",
+  "alarmes": 808,
+  "exigiram_pessoa": 66,
+  "fila_filtrada": 306,
+  "pessoa_fora_da_fila": 0
+ },
+ {
+  "data": "2025-12-20",
+  "alarmes": 971,
+  "exigiram_pessoa": 42,
+  "fila_filtrada": 381,
+  "pessoa_fora_da_fila": 4
+ },
+ {
+  "data": "2025-12-21",
+  "alarmes": 1099,
+  "exigiram_pessoa": 51,
+  "fila_filtrada": 432,
+  "pessoa_fora_da_fila": 6
+ },
+ {
+  "data": "2025-12-22",
+  "alarmes": 1339,
+  "exigiram_pessoa": 72,
+  "fila_filtrada": 650,
+  "pessoa_fora_da_fila": 8
+ },
+ {
+  "data": "2025-12-23",
+  "alarmes": 1094,
+  "exigiram_pessoa": 42,
+  "fila_filtrada": 434,
+  "pessoa_fora_da_fila": 2
+ },
+ {
+  "data": "2025-12-24",
+  "alarmes": 912,
+  "exigiram_pessoa": 32,
+  "fila_filtrada": 350,
+  "pessoa_fora_da_fila": 5
+ },
+ {
+  "data": "2025-12-25",
+  "alarmes": 702,
+  "exigiram_pessoa": 24,
+  "fila_filtrada": 264,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-26",
+  "alarmes": 894,
+  "exigiram_pessoa": 43,
+  "fila_filtrada": 327,
+  "pessoa_fora_da_fila": 3
+ },
+ {
+  "data": "2025-12-27",
+  "alarmes": 1018,
+  "exigiram_pessoa": 11,
+  "fila_filtrada": 329,
+  "pessoa_fora_da_fila": 1
+ },
+ {
+  "data": "2025-12-28",
+  "alarmes": 820,
+  "exigiram_pessoa": 8,
+  "fila_filtrada": 248,
+  "pessoa_fora_da_fila": 0
+ },
+ {
+  "data": "2025-12-29",
+  "alarmes": 905,
+  "exigiram_pessoa": 10,
+  "fila_filtrada": 308,
+  "pessoa_fora_da_fila": 0
+ },
+ {
+  "data": "2025-12-30",
+  "alarmes": 861,
+  "exigiram_pessoa": 5,
+  "fila_filtrada": 278,
+  "pessoa_fora_da_fila": 0
+ },
+ {
+  "data": "2025-12-31",
+  "alarmes": 750,
+  "exigiram_pessoa": 7,
+  "fila_filtrada": 205,
+  "pessoa_fora_da_fila": 0
+ }
+]
