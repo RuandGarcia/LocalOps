@@ -1,5 +1,7 @@
 # LocalOps: copiloto de AIOps para a operação de incidentes
 
+🔗 **Painel ao vivo:** [localops-ten.vercel.app](https://localops-ten.vercel.app) (modo demonstração com a base real de 2025)
+
 Challenge AIOps · Locaweb × FIAP 2026 · Equipe Paladinos · Turma 2TSCOA
 
 O LocalOps faz quatro coisas pelo plantonista:
